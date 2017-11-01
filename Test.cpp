@@ -5,6 +5,7 @@
 #include "Test.h"
 #include <iostream>
 
+//用if语句模拟计算
 void Test::ifsum(){//::表示ifsum函数为Test类中的函数
 
     using namespace std;//使用std命名空间
@@ -48,4 +49,37 @@ void Test::ifsum(){//::表示ifsum函数为Test类中的函数
 
 
     cout<<"结果："<<sum<<endl;
+}
+
+
+/**
+ * 编写一个程序，输入两个正整数，输出它的最大公约数
+ * 辗转相除法
+ * @author CY
+ * @return 返回最大公约数
+ */
+int Test::maxDivisor(){
+
+    using namespace std;
+
+    cout<<"请输入两个正整数以空格间隔例如：10 12"<<endl;
+
+    int a,b;
+
+    cin>>a>>b;
+
+    int temp;
+    while (true){//辗转相除法，当余数为0时，被除数为最大公约数
+
+        temp=a%b;// 求余数
+
+        if (temp==0){
+            cout<<"最大公约数为："<<b<<endl;
+            return b;
+        }
+
+        a=b;
+        b=temp;
+    }
+
 }

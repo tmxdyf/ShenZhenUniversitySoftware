@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Test.h"
+#include "Hanoi.h"
+#include "Calendar.h"
 
 int main() {
 
@@ -15,8 +17,14 @@ int main() {
 
     Test test={};
 
-    test.ifsum();
+//    test.ifsum();
 
+//    test.maxDivisor();
+
+//    Hanoi{}.hanoiMain();
+
+
+    Calendar{}.calendarMain();
     return 0;
 }
 

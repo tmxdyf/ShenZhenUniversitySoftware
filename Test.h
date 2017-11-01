@@ -9,7 +9,10 @@
 class Test {
 
 public:
+
     void ifsum();
+
+    int maxDivisor();
 
 };
 
