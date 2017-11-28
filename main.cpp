@@ -27,7 +27,8 @@ int main() {
 
 //    Calendar{}.calendarMain();
 
-    Cylinder{}.calculate();
+//    Cylinder{}.calculate();
+    Cylinder{}.average();
     return 0;
 }
 

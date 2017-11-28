@@ -12,6 +12,8 @@ class Cylinder {
 
 public:
     void calculate();
+    void average();
+    void sequence();
 
 };
 
