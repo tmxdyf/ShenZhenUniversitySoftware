@@ -2,6 +2,7 @@
 #include "Test.h"
 #include "Hanoi.h"
 #include "Calendar.h"
+#include "Cylinder.h"
 
 int main() {
 
@@ -24,7 +25,9 @@ int main() {
 //    Hanoi{}.hanoiMain();
 
 
-    Calendar{}.calendarMain();
+//    Calendar{}.calendarMain();
+
+    Cylinder{}.calculate();
     return 0;
 }
 
