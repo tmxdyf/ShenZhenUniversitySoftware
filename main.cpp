@@ -29,7 +29,10 @@ int main() {
 
 //    Cylinder{}.calculate();
 //    Cylinder{}.average();
-    Cylinder{}.sequence();
+//    Cylinder{}.sequence();
+//    Cylinder{}.revstr();
+//    Cylinder{}.runResult();
+    Cylinder{}.pointrev();
     return 0;
 }
 

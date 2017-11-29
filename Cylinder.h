@@ -15,7 +15,12 @@ public:
     void calculate();
     void average();
     void sequence();
+    void revstr();
+    void runResult();
+    void pointrev();
 
+private:
+    void swap(int *i, int &j);
 };
 
 
