@@ -6,6 +6,7 @@
 #define HELLOWORLD_CYLINDER_H
 
 #include <iostream>
+#include <string>
 
 
 class Cylinder {

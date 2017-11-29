@@ -58,12 +58,38 @@ void Cylinder::average() {
 void Cylinder::sequence() {
 
     int indexs[]={8,5,5,6,9,0,3,2,7,6};
+    int temp;
 
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
+    int arrayLength=sizeof(indexs)/sizeof(indexs[0]);
 
-//            indexs[i]
+    std::cout<<"数组长度："<<arrayLength<<std::endl;
+
+    for (int i = 0; i < arrayLength; ++i) {
+        for (int j = i+1; j < arrayLength; ++j) {
+
+            if (indexs[i]>indexs[j]){
+
+                temp=indexs[i];
+                indexs[i]=indexs[j];
+                indexs[j]=temp;
+            }
+//
         }
     }
 
+
+    for (int k = 0; k < arrayLength; ++k) {
+        std::cout<<"\t"<<indexs[k];
+    }
+
+}
+
+
+/**
+ * 输入一个长度小于50的字符串，逆转字符串后输出
+ */
+void str(){
+
+    string s="hello world!";
+    char str[]={''};
 }
